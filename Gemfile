@@ -33,6 +33,9 @@ gem 'bcrypt', '~> 3.1.7'
 # Use hirb for better database display in console
 gem 'hirb', '0.7.3'
 
+# Needed to enable chat on a production server, in our case Heroku.
+gem 'redis'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
