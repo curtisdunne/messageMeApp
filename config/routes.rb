@@ -5,5 +5,8 @@ Rails.application.routes.draw do
   delete 'logout', to: 'sessions#destroy'
   post 'message', to: 'messages#create'
 
+  get 'signup', to: 'users#new'
+  post 'signup', to: 'users#create'
+
   mount ActionCable.server, at: '/cable'
 end
